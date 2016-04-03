@@ -2,12 +2,134 @@
 title: Akron Kitchen
 ---
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
+<section class="hero">
+  <div class="container text-center">
+    <h1>The <em>"Akron Kitchen"</em> Project</h1>
+    <p class="description">We’re a diverse group of locally-owned food businesses looking to bring
+      a commercial kitchen to the Akron, Ohio area.</p>
+
+    <div class="button-group">
+      <a class="button button-primary" href="#what-we-want">Learn More About Us</a>
+      <a class="button" href="https://www.facebook.com/akronkitchen/">Follow Us On Facebook</a>
+    </div>
   </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+</section>
+
+<section class="container" id="what-we-want">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="title">What We Want</h2>
+      <p class="description">Our main goal is to help bring a commercial kitchen to
+        the Akron area so that our local food community has a safe and
+        licensed facility to cook food, produce products, and teach classes.</p>
+
+      <p>Our community also provides a network to become introduced to Akron's
+        food production scene. We have a Facebook group where we discuss
+        local laws &amp; regulations, talk about interesting events, and help
+        to connect people to other organizations and businesses.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="title">What We're Doing</h2>
+      <p class="description">To justify the idea, we've already started collecting information about:</p>
+
+      <ul>
+        <li>Potential kitchen renters</li>
+        <li>Existing kitchens for rent</li>
+        <li>Information about local food organizations</li>
+      </ul>
+
+      <p><em>The information we collect is available to interested parties
+            who can help us achieve our goals.</em></p>
+      <p><a class="icon icon-left arrow-down" href="https://drive.google.com/folderview?id=0B5_MnDA-y-zdZXlIR0lPYjBMVWM&usp=sharing">Download Data</a></p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="title">Get Involved</h2>
+      <p class="description">We meet once a month to keep in touch, share information,
+        and decide what our next steps will be.</p>
+
+      <p>
+        <a class="icon icon-left arrow-right uppercase" href="https://www.facebook.com/akronkitchen/events">View Upcoming Events</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="title">Who We Are</h2>
+      <p class="description">We're made up of Akron's finest food entrepreneurs,
+        caterers, restaurant owners, local growers, and area food organizations.</p>
+    </div>
+  </div>
+
+  <ul class="row organizers clearfix">
+    <% data.members.each do |name, member| %>
+      <li>
+        <% if member.url %>
+          <a href="<%= member.url %>">
+            <img alt="<%= name %>" src="<%= image_path(member.image) %>">
+          </a>
+        <% else %>
+          <img alt="<%= name %>" src="<%= image_path(member.image) %>">
+        <% end %>
+
+        <h3>
+          <% if member.url %>
+            <a href="<%= member.url %>"><%= name %></a>
+          <% else %>
+            <%= name %>
+          <% end %>
+        </h3>
+
+        <p><%= member.description %></p>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="text-center">
+    <p>Interested in helping us out? Join the conversation as part of our
+      private Facebook group.</p>
+    <a class="button button-primary" href="https://www.facebook.com/groups/akronkitchen/">
+      <span class="icon icon-right chevron-right">Join Our Group</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Sharing is Caring</h4>
+        <p>Please share our organization with your network to expand our reach.</p>
+      </div>
+
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4>Get In Touch</h4>
+        <ul class="contact-list">
+          <li><a href="mailto:info@akronkitchen.org">info@akronkitchen.org</a></li>
+          <li><a href="https://www.facebook.com/akronkitchen/">Facebook Page</a></li>
+          <li><a href="https://www.facebook.com/groups/akronkitchen/">Facebook Group</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright &copy; Akron Kitchen, <%= Time.now.year %></p>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+Ashley Young:
+  description: Owner of Fire and Ash, a local personal chef service.
+  image: default-person.png
+  url: http://www.fireandashcatering.com
+
+Jonathan Knapp:
+  description: Owner of Coffee and Code, web development and consulting agency.
+  image: default-person.png
+  url: http://www.coffeeandcode.com
+
+Sally Ohle:
+  description: Owner of Summit Croissants, creating delictable home baked goods since 2005.
+  image: default-person.png
+  url: http://www.summitcroissants.com/
+
+Charlie Murphy:
+  description: Owner of Stray Dog, delicious street food.
+  image: default-person.png
+  url: https://www.facebook.com/straydogcart/
+
+Ms Julie:
+  description: Owner of Ms Julie's Kitchen, local vegan & vegetarian restaurant owner.
+  image: default-person.png
+  url: https://www.facebook.com/Ms-Julies-Kitchen-369998630016/
