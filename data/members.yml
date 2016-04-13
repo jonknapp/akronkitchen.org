@@ -1,24 +1,29 @@
 Ashley Young:
-  description: Owner of Fire and Ash, a local personal chef service.
-  image: default-person.png
+  description: Owner of Fire and Ash, a local catering and personal chef service.
+  image: members/ashley-young.jpg
   url: http://www.fireandashcatering.com
+
+Charlie Murphy:
+  description: Serial entrepreneur. Stray Dog carts.
+  image: members/charly-murphy.jpg
+  url: https://www.facebook.com/straydogcart/
+
+Jan Green:
+  description: Teaches healthy food preparation at Let's Grow Akron and heads up the Community Canning group.
+  image: members/jan-green.jpg
+  url: http://letsgrowakron.org/
 
 Jonathan Knapp:
   description: Owner of Coffee and Code, web development and consulting agency.
-  image: default-person.png
-  url: http://www.coffeeandcode.com
+  image: members/jon-knapp.jpg
+  url: http://www.coffeeandcode.com/?utm_source=akronkitchen.org&utm_medium=profile_link&utm_campaign=community
+
+Ms. Julie:
+  description: Owner of Ms. Julie's Kitchen, local vegan & vegetarian restaurant owner.
+  image: members/ms-julie.jpg
+  url: https://www.facebook.com/Ms-Julies-Kitchen-369998630016/
 
 Sally Ohle:
   description: Owner of Summit Croissants, creating delictable home baked goods since 2005.
-  image: default-person.png
+  image: members/sally-ohle.jpg
   url: http://www.summitcroissants.com/
-
-Charlie Murphy:
-  description: Owner of Stray Dog, delicious street food.
-  image: default-person.png
-  url: https://www.facebook.com/straydogcart/
-
-Ms Julie:
-  description: Owner of Ms Julie's Kitchen, local vegan & vegetarian restaurant owner.
-  image: default-person.png
-  url: https://www.facebook.com/Ms-Julies-Kitchen-369998630016/
